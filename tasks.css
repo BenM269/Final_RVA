@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+  background: linear-gradient(#081116, #0d1924 ,#081116);
+  color: #222;
+  padding-bottom: 100px;
+}
+
+header {
+  padding: 10px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#151C22, #212832 ,#151C22);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 12px rgba(255, 255, 255, 0.1);
+
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  align-items: center;
+
+  
+}
+.create {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.create h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* .create h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: flex; */
+  /* margin: auto auto auto 800px;
+  align-items: center;
+  justify-content: space-between;
+  
+
+} */
+
+.menu-group {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.menu-group img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  
+}
+
+
+.task-card {
+  background: linear-gradient(#151C22, #212832 ,#151C22);
+  box-shadow: #ffffff;
+  margin: 100px auto;
+  padding: 75px 50px 60px 50px;
+  border-radius: 25px;
+  box-shadow: 0 6px 8px rgba(255, 248, 248, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 920px;
+  width: 100%;
+}
+
+.task-card label {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.task-card input[type="text"],
+.task-card textarea {
+  background-color: #455A64;
+  border: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.task-card input[type="date"] {
+  background-color: #455A64;
+  border: white;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  color: white
+}
+
+.create-btn,
+.save-btn {
+    background-color: #FCC804;
+    color: black;
+    padding: 12px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: center;  
+    width: 100%;         
+    max-width: 250px;   
+    transition: all 0.3s ease; 
+}
+
+.create-btn:hover,
+.save-btn:hover {
+    background: #FFE600;
+    color: #0d1117;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    background: linear-gradient(#151C22, #212832, #151C22);
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 -10px 12px rgba(255, 255, 255, 0.1);
+    z-index: 9999; 
+}
+
+footer a {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+footer img {
+  width: clamp(24px, 4vw, 34px);
+}
+
+
+@media (max-width: 428px ) {
+  header {
+    padding: 20px;
+  }
+
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .task-card {
+    padding: 40px 20px 20px;
+    border-radius: 20px;
+    margin: 50px auto 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .create h1{
+    font-size: 14px;
+    margin: auto auto auto 40px;
+    text-align: center;
+  }
+
+  .task-card input[type="text"],
+  .task-card textarea,
+  .task-card input[type="date"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .alarm-section p {
+    font-size: 16px;
+  }
+
+  .repeat-toggle span {
+    font-size: 14px;
+  }
+
+   .create-btn,
+    .save-btn {
+        max-width: 200px;
+        font-size: 0.9rem;
+    }
+
+  .menu-group img,
+  .notif-img {
+    width: 20px;
+    height: 20px;
+  }
+  
+}

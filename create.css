@@ -1,0 +1,166 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  background: linear-gradient(#0A1219, #122332 ,#0A1219);
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img{
+  display: flex;
+  width: 263px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.container {
+  background: linear-gradient(#0A1219, #122332 ,#0A1219);
+  padding: 40px 30px 0;
+  width: 400px;
+  height: 500px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border-radius: 25px;
+  box-shadow: #142431;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px 16px 16px 50px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background: linear-gradient(#213c53, #122332 ,#142431);
+  box-sizing: border-box;
+}
+
+.input-group img:first-child {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+.input-group img:last-child {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+  opacity: 1;
+  font-family: "Inter", sans-serif;
+}
+
+.signup-link {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  margin: 20px 0 28px;
+  background-color: #FCC804;
+  border-radius: 8px;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.signup-link:hover{
+  background: #FFE600;
+  color: #0d1117;
+}
+
+.signin-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 16px;
+  color: white;
+  ;
+}
+
+.signin-link a {
+  color: #0A1219;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+@media screen and (max-width: 428px) {
+  body {
+    align-items: flex-start;
+    padding-top: 0px;
+  }
+  .header img {
+    max-width: 60%; 
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p.subheading {
+    font-size: 15px;
+    margin: 12px 0 20px;
+  }
+
+  .input-group input {
+    padding: 14px 16px 14px 48px;
+    font-size: 15px;
+  }
+
+  .signup-link {
+    padding: 14px;
+    font-size: 16px;
+    margin: 20px 0 25px;
+  }
+
+  .signin-link {
+    font-size: 15px;
+  }
+}

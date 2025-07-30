@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tasks.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="menu-group">
+          <img src="img/arrowleft.png" alt="Menu" />
+        </div>
+        <div class="create">
+            <h1>Create New Task</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="task-card">
+      <div>
+        <label for="title">Task Title</label>
+        <input type="text" id="title" />
+      </div>
+
+      <div>
+        <label for="description">Task Description</label>
+        <textarea id="description" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label for="due">Due Date</label>
+        <input type="date" id="due" />
+      </div>
+
+      <button class="save-btn">Create</button>
+    </div>
+
+    <footer>
+      <a href="home.html" class="active"> 
+        <img src="img/home.png" alt="Home" />
+        HOME
+      </a>
+      <a class="task" href="tasks.html">
+        <img src="img/task2.png" alt="Task" />
+        TASK
+      </a>
+      <a href="calendar.html">
+        <img src="img/calendar.png" alt="Calendar" />
+        CALENDAR
+      </a>
+    </footer>
+  </body>
+</html>
